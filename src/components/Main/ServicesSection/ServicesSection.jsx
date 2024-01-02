@@ -7,21 +7,23 @@ import serviceThird from "../../../assets/images/seviceImageThird.jpg";
 import {
   Button,
   Card,
+  Col,
   CardBody,
   CardGroup,
   CardImg,
   CardText,
   CardTitle,
   Container,
+  Row,
 } from "react-bootstrap";
 
 const ServicesSection = () => {
   return (
-    <div className={styles.backGroundColor}>
-      <div className="d-inline-block w-100 h-100">
-        <Container>
-          <h2 className="py-5 text-white text-center">Services</h2>
-          <CardGroup>
+    <Container fluid className={styles.backGroundColor}>
+      <h2 className="py-4 text-white text-center">Services</h2>
+      <Row>
+        <CardGroup>
+          <Col sm="4">
             <Card className="m-4">
               <CardImg
                 alt="Card image cap"
@@ -37,6 +39,8 @@ const ServicesSection = () => {
                 <Button>Read More</Button>
               </CardBody>
             </Card>
+          </Col>
+          <Col sm="4">
             <Card className="m-4">
               <CardImg
                 alt="Card image cap"
@@ -52,7 +56,9 @@ const ServicesSection = () => {
                 <Button>Read More</Button>
               </CardBody>
             </Card>
-            <Card className="m-4">
+          </Col>
+          <Col sm="4">
+            <Card className="m-4 ">
               <CardImg
                 alt="Card image cap"
                 src={serviceThird}
@@ -67,10 +73,10 @@ const ServicesSection = () => {
                 <Button>Read More</Button>
               </CardBody>
             </Card>
-          </CardGroup>
-        </Container>
-      </div>
-    </div>
+          </Col>
+        </CardGroup>
+      </Row>
+    </Container>
   );
 };
 
