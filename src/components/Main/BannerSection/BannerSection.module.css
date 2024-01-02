@@ -1,0 +1,8 @@
+.codeImag {
+  background-image: url("../../../assets/images/codeImage.jpg");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: fill;
+  background-origin: content-box;
+}
